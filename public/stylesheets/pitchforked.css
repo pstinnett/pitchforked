@@ -1,0 +1,109 @@
+body {
+	font-family: "Helvetica", Arial, Verdana, sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: auto auto;
+}
+
+#header {
+	height: 100px;
+	border-top: solid 3px #ddd;
+	float: left;
+	clear: both;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#loading {
+	float:right;
+	padding-top: 30px;
+	margin-left: 10px;
+}
+
+#loading p {
+	float:right;
+}
+
+#loading img {
+	margin: 8px 10px 0px 0px;
+}
+
+#artwork {
+	width: 200px;
+	height: 200px;
+	margin: 0px 20px 20px 0px;
+	float: left;
+	background: #ddd;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+h1 {
+	float: left;
+	font-size: 50px;
+}
+
+h1 sup {
+	background-color: #DDFFFF;
+}
+
+h2 {
+	line-height: 10px;
+	margin: 0;
+}
+
+#artist_info {
+	padding-top: 10px;
+}
+
+#artist_info p {
+	line-height: 10px;
+}
+.credits {
+	margin-top:10px;
+	font-size:.8em;
+	color:#999;
+	float:right;
+	text-align:right;
+}
+
+.credits p {
+	line-height: 6px;
+}
+ 
+a:link, a:visited, a:focus, a:active {
+	color:#000;
+	background-color: #DDFFFF;
+}
+
+#artwork img {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+a:hover {
+	background-color: #FFFFFF;
+}
+
+a.play_link {
+	color: #FFFFFF;
+	background: #777;
+	padding: 10px;
+	text-align: center;
+	font-size: 45px;
+	text-decoration: none;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+a.play_link:hover {
+	background: #555;
+}
+
+a.player_link {
+	background: none;
+	font-size: 10px;
+	display: none; 
+}

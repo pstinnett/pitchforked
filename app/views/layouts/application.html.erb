@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Pitchforked Beta</title>
+		<link type="text/css" href="/stylesheets/pitchforked.css" rel="stylesheet" />
+		<link type="text/css" href="/stylesheets/page-player.css" rel="stylesheet" />
+		<link type="text/css" href="/stylesheets/optional-themes.css" rel="stylesheet" />
+		<%= javascript_include_tag 'prototype' %>
+		<%= javascript_include_tag 'soundmanager2' %>
+		<%= javascript_include_tag 'page-player.js' %>
+		<script type="text/javascript">
+			soundManager.url = '/swf/';
+			soundManager.onload = function() {};
+		</script>
+	</head>
+	<body>
+		<%= yield %>
+		
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-5195518-6");
+			pageTracker._trackPageview();
+			} catch(err) {}
+		</script>
+	</body>
+</html>

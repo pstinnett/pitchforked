@@ -1,0 +1,24 @@
+<br />
+<div style="clear:both">
+<div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+<div id="artist_info">
+	<h2><%= @track.name %></h2>
+	<p><%= @track.artist.name %></p>
+	<% if @track.album.id != 0 %>
+		<p>Score <strong><%= @track.album.pf_score %></strong></p>
+		<p>Read the <a href="<%= @track.album.pf_url %>" target="_blank">review</a></p>
+	<% end %>
+</div>
+<br style="clear:both">
+<ul id="myplayer" class="playlist dark">
+	<li class="mytrack">
+		<a class="player_link" href="<%= @track.mp3_url %>">&nbsp;</a>
+	</li>
+</ul>
+<script>pagePlayer.init()</script>
+ <div id="spectrum-container" class="spectrum-container"> 
+  <div class="spectrum-box"> 
+   <div class="spectrum"></div> 
+  </div> 
+ </div>
+</div>

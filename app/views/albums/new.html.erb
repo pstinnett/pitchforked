@@ -1,0 +1,24 @@
+<% form_for(@album) do |form| %>
+  <p>  
+    <%= form.label :name %><br/>  
+    <%= form.text_field :name %>  
+  </p>
+  <p>
+	<%= form.label :is_enabled %><br />
+	<%= form.check_box :is_enabled %>
+  </p>
+  <p>
+    <%= form.label :pf_score %><br/>  
+    <%= form.text_field :pf_score %>	
+  </p>
+  <p>
+    <%= form.label :pf_url %><br/>  
+    <%= form.text_field :pf_url %>	
+  </p>
+  <p>
+    <%= form.label :artwork_url %><br/>  
+    <%= form.text_field :artwork_url %>	
+  </p>
+  
+  <%= form.submit %>  
+<% end %>

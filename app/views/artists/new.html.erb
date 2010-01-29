@@ -1,0 +1,16 @@
+<% form_for(@artist) do |form| %>  
+  <p>  
+    <%= form.label :name %><br/>  
+    <%= form.text_field :name %>  
+  </p>
+  <p>
+    <%= form.label :url_name %><br/>  
+    <%= form.text_field :url_name %>	
+  </p>
+  <p>
+	<%= form.label :is_enabled %><br />
+	<%= form.check_box :is_enabled %>
+  </p>
+  
+  <%= form.submit %>  
+<% end %>
