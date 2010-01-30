@@ -3,7 +3,7 @@ class TracksController < ApplicationController
   end
   
   def import
-    require 'Base64'
+    require 'base64'
     require 'rest_client'
     require 'json'
     @success = []

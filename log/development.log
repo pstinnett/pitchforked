@@ -1073,3 +1073,15 @@ ActionView::TemplateError (undefined method `artwork_url' for nil:NilClass) on l
 Rendered rescues/_trace (35.0ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2010-01-30 01:19:57) [GET]
+  Parameters: {"id"=>"load"}
+  [4;36;1mArtist Load (0.5ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Artist with ID=load):
+  app/controllers/artists_controller.rb:7:in `show'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (not_found)

@@ -9,13 +9,13 @@ set :repository,  "git@github.com:pstinnett/pitchforked.git" # replace neerajdot
 set :use_sudo, false
 set :scm, :git
 set :deploy_via, :copy
- 
+set :branch, "master"
 # this will make sure that capistrano checks out the submodules if any
 set :git_enable_submodules, 1
  
-set(:application) { "pf_#{stage}" } # replace gitlearn with your application name
-set (:deploy_to) { "/var/www/apps/#{application}" }
-set :copy_remote_dir, "/var/www/apps/#{user}/tmp"
+set(:application) { "pitchforked_#{stage}" } # replace gitlearn with your application name
+set (:deploy_to) { "/srv/www/apps/#{application}" }
+set :copy_remote_dir, "/srv/www/apps/tmp"
  
 # source: http://tomcopeland.blogs.com/juniordeveloper/2008/05/mod_rails-and-c.html
 namespace :deploy do
