@@ -1,15 +1,12 @@
-<br />
-<div style="clear:both">
+<div id="track_id" style="display:none;"><%= @track.id %></div>
+<div class="track_container">
 <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
 <div id="artist_info">
-	<h2><%= @track.name %></h2>
-	<p><%= @track.artist.name %></p>
+	<p class="track"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
 	<% if @track.album.id != 0 %>
-		<p>Score <strong><%= @track.album.pf_score %></strong></p>
-		<p>Read the <a href="<%= @track.album.pf_url %>" target="_blank">review</a></p>
+		<p class="review"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
 	<% end %>
 </div>
-<br style="clear:both">
 <ul id="myplayer" class="playlist dark">
 	<li class="mytrack">
 		<a class="player_link" href="<%= @track.mp3_url %>">&nbsp;</a>

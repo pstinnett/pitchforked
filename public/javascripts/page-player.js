@@ -249,6 +249,7 @@ function PagePlayer(oConfigOverride) {
     },
 
     finish: function() {
+	  new Ajax.Updater({success:'prev_track',failure:'error'}, '/pages/prev_track/'+$('track_id').innerHTML, {asynchronous:true, evalScripts:true, insertion:'top'});
 	  new Ajax.Updater({success:'mytrack',failure:'error'}, '/pages/next_track', {asynchronous:true, evalScripts:true}); return false;
       pl.removeClass(this._data.oLI,this._data.className);
       this._data.className = '';

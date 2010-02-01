@@ -1,30 +1,24 @@
 <div id="wrapper">
 	<div id="header">
 		<div id="title">
-			<h1>Pitchforked<sup>beta</sup></h1>
-		</div>
-		<div id="loading">
+			<h1>Pitchforked</h1>
 		</div>
 	</div>
-	<div id="playerarea">
 		<div id="mytrack">
+			<p class="intro">Pitchforked creates a random playlist of tracks from Pitchfork.com's Best New Music section. <br /><br />Press 
 			<%= 
 				link_to_remote "Play",
 					:url => { :action => "next_track" },
 					:update => { :success => "mytrack", :failure => "error" },
 					:html => { :class => "play_link" }
-			%>
+			%> to listen.</p>
+		<div id="track_id" style="display:hidden"></div>
 		</div>
 
-	</div> 
-<div id="jplayer_info"></div> 
-<div class="credits">
-	<p>Tracks courtesy of <a href="http://www.8tracks.com/">8tracks.com</a></p>
-	<p>Inspired by <a href="http://www.zachklein.com/">Zach Klein</a></p>
-	<p>Developed by <a href="http://www.pstinnett.com">Patrick Stinnett</a></p>
-</div>
-	<br style="clear:both;"/>
-		<div id="control-template"> 
+		<div id="prev_track"></div>
+				<br style="clear:both;"/>		<br style="clear:both;"/>		<br style="clear:both;"/>
+				<p>load track into previous <a class="play_link" href="#" onclick="load_prev()">click</a></p>
+	<div id="control-template"> 
 	  <!-- control markup inserted dynamically after each link --> 
 	  <div class="controls"> 
 	   <div class="statusbar"> 
@@ -34,7 +28,7 @@
 	  </div> 
 	  <div class="timing"> 
 	   <div id="sm2_timing" class="timing-data"> 
-	    <span class="sm2_position">%s1</span> / <span class="sm2_total">%s2</span></div> 
+	   </div> 
 	  </div>
 	  <div class="peak"> 
 	   <div class="peak-box"><span class="l"></span><span class="r"></span> 
@@ -48,3 +42,7 @@
 	  </div> 
 	 </div>
 	</div>
+	<script type="text/javascript">
+	function load_prev() {
+		new Ajax.Updater({success:'prev_track',failure:'error'}, '/pages/prev_track/'+$('track_id').innerHTML, {asynchronous:true, evalScripts:true, insertion:'top'}); return false;}
+	</script>

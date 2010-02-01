@@ -1,0 +1,9 @@
+<div class="prev_track_container">
+<div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+<div id="artist_info">
+	<p class="track"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+	<% if @track.album.id != 0 %>
+		<p class="review"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></strong></p>
+	<% end %>
+</div>
+</div>

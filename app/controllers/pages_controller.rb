@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @track = Track.find(:first)
   end
 
+  def prev_track
+    @track =  Track.find params[:id]  
+  end
+
   def next_track
     @track = Track.random()
   end
