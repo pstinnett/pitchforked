@@ -15012,3 +15012,30 @@ Rendering pages/prev_track
   [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 9) [0m
   [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 9) [0m
 Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/pages/prev_track/36]
+
+
+Processing PagesController#prev_track (for 127.0.0.1 at 2010-01-31 20:49:01) [POST]
+  Parameters: {"id"=>"36"}
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 36) [0m
+Rendering template within layouts/application
+Rendering pages/prev_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 9) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 9) [0m
+Completed in 88ms (View: 82, DB: 1) | 200 OK [http://localhost/pages/prev_track/36]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-01-31 20:49:01) [POST]
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 38) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 10) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 10) [0m
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-31 20:49:01) [GET]
+
+ActionController::RoutingError (No route matches "/null.mp3" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

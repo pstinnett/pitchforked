@@ -12,12 +12,9 @@
 					:update => { :success => "mytrack", :failure => "error" },
 					:html => { :class => "play_link" }
 			%> to listen.</p>
-		<div id="track_id" style="display:hidden"></div>
+			<div id="track_id" style="display:hidden"></div>
 		</div>
-
 		<div id="prev_track"></div>
-				<br style="clear:both;"/>		<br style="clear:both;"/>		<br style="clear:both;"/>
-				<p>load track into previous <a class="play_link" href="#" onclick="load_prev()">click</a></p>
 	<div id="control-template"> 
 	  <!-- control markup inserted dynamically after each link --> 
 	  <div class="controls"> 
@@ -42,7 +39,3 @@
 	  </div> 
 	 </div>
 	</div>
-	<script type="text/javascript">
-	function load_prev() {
-		new Ajax.Updater({success:'prev_track',failure:'error'}, '/pages/prev_track/'+$('track_id').innerHTML, {asynchronous:true, evalScripts:true, insertion:'top'}); return false;}
-	</script>
