@@ -1,176 +1,178 @@
 * {
-	padding: 0 0;
-	margin: 0 0;
+margin:0;
+padding:0;
 }
+
 body {
-	font-family: "Helvetica Neue", Helvetica, Lucida Grande, Verdana, Arial, sans-serf;
-	margin: 0 0;
+font-family:"Helvetica Neue", Helvetica, Lucida Grande, Verdana, Arial, sans-serf;
+margin:0;
 }
 
 #wrapper {
-	margin: 0 0;
+margin:0;
 }
 
 #header {
-	height: 50px;
-	background: url(/images/header_bg.png) repeat-x;
-	border-bottom: solid 2px #000;
-	float: left;
-	clear: both;
-	width: 100%;
+height:50px;
+background:url(/images/header_bg.png) repeat-x;
+border-bottom:solid 2px #000;
+float:left;
+clear:both;
+width:100%;
 }
 
 .track_container {
-	clear:both;
-	background-color: #f2f2f2;
-	border-top: 3px #dadada solid;
+clear:both;
+background-color:#f2f2f2;
+border-top:3px #dadada solid;
 }
 
 #artwork {
-	height: 100px;
-	width: 100px;
-	margin: 0px 20px 0px 10px;
-	float: left;
-	background: #ddd;
+height:100px;
+width:100px;
+float:left;
+background:#ddd;
+margin:0 20px 0 10px;
 }
 
 #artwork img {
-	height: 100px;
-	width: 100px;
-	max-height: 100px;
-	max-width: 100px;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
+height:100px;
+width:100px;
+max-height:100px;
+max-width:100px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
 }
 
 h1 {
-	font-family: "Helvetica Neue", Helvetica, Lucida Grande, Verdana, Arial, sans-serf;
-	font-weight: lighter;
-	background: url(/images/title.png) no-repeat;
-	margin: 12px 0px 0px 10px;
-	width: 190px;
-	height: 30px;
-	text-indent: -9999px;
-	color: #FFFFFF;
-	font-size: 20px;
+font-family:"Helvetica Neue", Helvetica, Lucida Grande, Verdana, Arial, sans-serf;
+font-weight:lighter;
+background:url(/images/title.png) no-repeat;
+width:190px;
+height:30px;
+text-indent:-9999px;
+color:#FFF;
+font-size:20px;
+margin:12px 0 0 10px;
 }
 
 p.intro {
-	font-size: 25px;
-	width: 800px;
-	margin: auto auto;
-	padding-top: 100px;
+font-size:25px;
+width:800px;
+padding-top:100px;
+margin:auto;
 }
 
 h2 {
-	line-height: 10px;
-	margin: 0;
+line-height:10px;
+margin:0;
 }
 
 #artist_info {
-	color: #dadada;
-	background-color: #f2f2f2;
-	padding-top: 10px;
-	height:100px;
+color:#dadada;
+background-color:#f2f2f2;
+padding-top:10px;
+height:100px;
 }
 
 .highlight {
-	color: #aaa;
+color:#aaa;
 }
 
 #artist_info a {
-	color: #c9c8c8;
-	text-decoration: none;
-	background: none;
+color:#c9c8c8;
+text-decoration:none;
+background:none;
 }
 
 #artist_info a:hover {
-	color: #aaa;
-	text-decoration: underline;
+color:#aaa;
+text-decoration:underline;
 }
 
 #artist_info p.track {
-	background: url(/images/note.png) no-repeat;
-	padding-top: 50px;
-	font-size:200%;
-	float:left;
+background:url(/images/note.png) no-repeat;
+padding-top:50px;
+font-size:200%;
+float:left;
 }
 
 #artist_info p.review {
-	background: url(/images/rate.png) no-repeat;
-	padding-top: 50px;
-	padding-right: 10px;
-	font-size:200%;
-	float:right;
+background:url(/images/rate.png) no-repeat;
+padding-top:50px;
+padding-right:10px;
+font-size:200%;
+float:right;
 }
+
 .credits {
-	margin-top:10px;
-	font-size:.8em;
-	color:#999;
-	float:right;
-	text-align:right;
+margin-top:10px;
+font-size:.8em;
+color:#999;
+float:right;
+text-align:right;
 }
 
 .credits p {
-	line-height: 6px;
-}
-
-#artwork img {
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
+line-height:6px;
 }
 
 a {
-	color: #000;
-	background: #fffcd3;
+color:#000;
+background:#fffcd3;
 }
 
 a:hover {
-	background-color: #FFFFFF;
+background-color:#FFF;
+}
+
+.track_container {
+padding-top:7px;
 }
 
 .prev_track_container {
-	clear:both;
-	height: 50px;
-	background-color: #e2e2e2;
-	border-top: 1px #dadada solid;
+clear:both;
+height:50px;
+background-color:#f2f2f2;
+border-top:1px #dadada solid;
+padding-top: 8px;
 }
 
 .prev_track_container #artwork {
-	height: 50px;
-	width: 50px;
-	margin: 0px 20px 0px 10px;
-	float: left;
-	background: #ddd;
+height:50px;
+width:50px;
+float:left;
+background:#ddd;
+margin:0px 20px 0 10px;
 }
 
 .prev_track_container #artwork img {
-	height: 50px;
-	width: 50px;
-	max-height: 50px;
-	max-width: 50px;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
+height:50px;
+width:50px;
+max-height:50px;
+max-width:50px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
 }
 
 .prev_track_container #artist_info {
-	color: #dadada;
-	background-color: #f2f2f2;
-	padding-top: 10px;
-	height:50px;
+color:#dadada;
+background-color:#f2f2f2;
+padding-top:10px;
+height:50px;
 }
 
 .prev_track_container #artist_info p.track {
-	background-image: none;
-	padding-top:2px;
-	font-size:150%;
-	float:left;
+background-image:none;
+padding-top:2px;
+font-size:150%;
+float:left;
 }
 
 .prev_track_container #artist_info p.review {
-	background-image: none;
-	padding-right: 10px;
-	padding-top: 2px;
-	font-size:150%;
-	float:right;
+background-image:none;
+padding-right:10px;
+padding-top:2px;
+font-size:150%;
+float:right;
 }

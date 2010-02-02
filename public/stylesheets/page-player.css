@@ -204,7 +204,6 @@ ul.playlist li.sm2_paused a.sm2_link {
 
 ul.playlist li .timing {
  position:absolute;
- display:none;
  text-align:right;
  right:1em;
  top:1em;

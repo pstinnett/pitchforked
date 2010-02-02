@@ -1,13 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<title>Pitchforked Beta</title>
+		<title id="page_title">Pitchforked Beta</title>
 		<link type="text/css" href="/stylesheets/pitchforked.css" rel="stylesheet" />
 		<link type="text/css" href="/stylesheets/page-player.css" rel="stylesheet" />
 		<link type="text/css" href="/stylesheets/optional-themes.css" rel="stylesheet" />
 		<%= javascript_include_tag 'prototype' %>
+		<script src="/javascripts/scriptaculous.js?load=effects" type="text/javascript"></script>
 		<%= javascript_include_tag 'soundmanager2' %>
 		<%= javascript_include_tag 'page-player.js' %>
+		<%= javascript_include_tag 'tooltip-v0.1.js' %>
 		<script type="text/javascript">
 			soundManager.url = '/swf/';
 			soundManager.onload = function() {};

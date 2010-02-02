@@ -18,14 +18,13 @@
 	<div id="control-template"> 
 	  <!-- control markup inserted dynamically after each link --> 
 	  <div class="controls"> 
-	   <div class="statusbar"> 
+	   <div class="statusbar" onmouseover="showtiming()" onmouseout="hidetiming()"> 
 	    <div class="loading"></div> 
 	     <div class="position"></div> 
 	   </div> 
 	  </div> 
-	  <div class="timing"> 
-	   <div id="sm2_timing" class="timing-data"> 
-	   </div> 
+	  <div class="timing" id="timing"> 
+		      <div id="sm2_timing" class="timing-data"><span class="sm2_position">%s1</span> / <span class="sm2_total">%s2</span></div>
 	  </div>
 	  <div class="peak"> 
 	   <div class="peak-box"><span class="l"></span><span class="r"></span> 
@@ -39,3 +38,12 @@
 	  </div> 
 	 </div>
 	</div>
+	<script type="text/javascript">
+		new Effect.Opacity('timing', { from: 0.0, to: 0.0, duration: 0.0 });
+		function showtiming() {
+			new Effect.Opacity('timing', { from: 0.0, to: 1.0, duration: 0.2 });
+		}
+		function hidetiming() {
+			new Effect.Opacity('timing', { from: 1.0, to: 0.0, duration: 0.2 });
+		}
+	</script>
