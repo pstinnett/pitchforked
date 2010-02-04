@@ -22975,3 +22975,25 @@ Processing PagesController#index (for 127.0.0.1 at 2010-02-03 22:44:15) [GET]
 Rendering template within layouts/application
 Rendering pages/index
 Completed in 22ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-03 23:06:01) [POST]
+  Parameters: {"authenticity_token"=>"V6qNZcA4czejyvZvk8J5pUpH+eJKKVc6hjIjV3m3K9M=", "_"=>""}
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+
+ActionView::TemplateError (undefined method `artwork_url' for nil:NilClass) on line #3 of app/views/pages/next_track.html.erb:
+1: <div id="track_id" style="display:none;"><%= @track.id %></div>
+2: <div class="track_container" onclick="togglePlay()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info">
+5: 	<p class="track"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+
+    app/views/pages/next_track.html.erb:3
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
