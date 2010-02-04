@@ -40,10 +40,23 @@
 	</div>
 	<script type="text/javascript">
 		new Effect.Opacity('timing', { from: 0.0, to: 0.0, duration: 0.0 });
+		var is_playing = true;
 		function showtiming() {
 			new Effect.Opacity('timing', { from: 0.0, to: 1.0, duration: 0.2 });
 		}
 		function hidetiming() {
 			new Effect.Opacity('timing', { from: 1.0, to: 0.0, duration: 0.2 });
+		}
+		function togglePlay() {
+			if (is_playing == true)
+			{
+				soundManager.pauseAll();
+				is_playing = false;
+			}
+			else
+			{
+				soundManager.resumeAll();
+				is_playing = true;
+			}
 		}
 	</script>

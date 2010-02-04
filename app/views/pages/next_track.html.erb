@@ -1,5 +1,5 @@
 <div id="track_id" style="display:none;"><%= @track.id %></div>
-<div class="track_container">
+<div class="track_container" onclick="togglePlay()">
 <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
 <div id="artist_info">
 	<p class="track"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
