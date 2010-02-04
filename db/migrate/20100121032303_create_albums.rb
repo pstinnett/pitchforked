@@ -3,7 +3,7 @@ class CreateAlbums < ActiveRecord::Migration
     create_table :albums do |t|
       t.string :name
       t.boolean :is_enabled
-      t.integer :pf_score
+      t.float :pf_score
       t.string :pf_url
       t.string :artwork_url
       t.belongs_to :artist

@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20100123233231) do
   create_table "albums", :force => true do |t|
     t.string   "name"
     t.boolean  "is_enabled"
-    t.integer  "pf_score"
+    t.float    "pf_score"
     t.string   "pf_url"
     t.string   "artwork_url"
     t.integer  "artist_id"
