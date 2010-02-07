@@ -28,8 +28,8 @@ border-top:3px #dadada solid;
 padding-top:7px;
 }
 
-.track_container:hover {
-background-color: #222222;
+#current:hover {
+background-color: #c8c9c9;
 border-top:3px #242424 solid;
 }
 

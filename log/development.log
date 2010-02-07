@@ -25960,3 +25960,360 @@ Processing TracksController#import (for 127.0.0.1 at 2010-02-07 15:11:50) [GET]
 Rendering template within layouts/application
 Rendering tracks/import
 Completed in 22005ms (View: 751, DB: 15) | 200 OK [http://localhost/import/6]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:17:46) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:17:48) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 11) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:20:24) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:20:25) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 17) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 97ms (View: 89, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:20:40) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:20:41) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 17) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:21:17) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:21:18) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 11) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 20ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:21:29) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:21:33) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 18) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 6) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 21ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:21:41) [GET]
+  [4;36;1mTrack Load (0.7ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:21:42) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 10) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 3) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 18ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:22:09) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:22:11) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 1) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Completed in 18ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:22:18) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 74ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:22:19) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 4) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (1.1ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 2) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:22:32) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:22:34) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 2) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Completed in 18ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:23:27) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:23:28) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 8) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 19ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:23:53) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:23:54) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 17) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 86ms (View: 79, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:24:00) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:24:02) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:24:17) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:24:18) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.6ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 10) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 3) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 84ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:24:56) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:24:57) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 22) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 6) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:26:52) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:26:53) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 15) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:27:17) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:27:19) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 1) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:27:39) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:27:40) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 4) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 2) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+Completed in 18ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:27:50) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:27:51) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 8) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 84ms (View: 77, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:27:58) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:27:59) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 12) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:28:27) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:28:28) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 17) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:28:37) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:28:38) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 8) [0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
