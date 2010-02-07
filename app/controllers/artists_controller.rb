@@ -27,11 +27,11 @@ class ArtistsController < ApplicationController
        @new_album.name = "No Album Found"
        @new_album.is_enabled = true
        @new_album.pf_score = 0
-       @new_album.pf_url = 'http://www.pitchfork.com'
+       @new_album.pf_url = "http://www.pitchfork.com"
        @new_album.artwork_url = "/images/no-artwork.jpg"
        @new_album.record_label = "No Label Found"
        @new_album.year = 2010
-     @new_album.save    
+    @new_album.save    
     @artists = []
     11.times do |i|
       if i > 0
