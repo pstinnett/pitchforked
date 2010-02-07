@@ -26317,3 +26317,45 @@ Rendering pages/next_track
   [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
   [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
 Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-07 15:49:09) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-07 15:49:11) [POST]
+  Parameters: {"authenticity_token"=>"ZLC9jC8QIpStF2LtuWTao+ES3RiS71FrPi/vXYaMeqM=", "_"=>""}
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 17) [0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 6) [0m
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTracks (20100121032055)
+Migrating to CreateArtists (20100121032204)
+Migrating to CreateAlbums (20100121032303)
+Migrating to AddLabelAndYearToAlbum (20100123233231)
+Migrating to AddPfDateToAlbums (20100207205317)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "albums" ADD "pf_date" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100207205317')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("albums")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("artists")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tracks")[0m
