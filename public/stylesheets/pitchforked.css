@@ -187,3 +187,11 @@ padding-top:2px;
 font-size:150%;
 float:right;
 }
+
+.prev_track_container #artist_info p.date {
+background-image:none;
+padding-right:10px;
+padding-top:2px;
+font-size:150%;
+float:right;
+}
