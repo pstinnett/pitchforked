@@ -28,6 +28,7 @@ class ArtistsController < ApplicationController
        @new_album.is_enabled = true
        @new_album.pf_score = 0
        @new_album.pf_url = "http://www.pitchfork.com"
+       @new_album.pf_date = "hello"
        @new_album.artwork_url = "/images/no-artwork.jpg"
        @new_album.record_label = "No Label Found"
        @new_album.year = 2010
@@ -57,6 +58,10 @@ class ArtistsController < ApplicationController
             @new_album.is_enabled = true
             @new_album.pf_score = review_score
             @new_album.pf_url = 'http://www.pitchfork.com' + review_url.to_s
+              review_page = Hpricot(open('http://www.pitchfork.com' + review_url.to_s))
+              credits = review_page.search("p[@class='credits']").inner_html.to_s
+              regexp = /(?=(January|February|March|April|May|June|July|August|September|October|November|December)).*/
+            @new_album.pf_date = credits.match(regexp).to_s
             @new_album.artwork_url = album_art.to_s
             @new_album.record_label = record_label.to_s
             @new_album.year = year.join.to_s.gsub(/[^0-9]/, '').to_i
@@ -68,6 +73,13 @@ class ArtistsController < ApplicationController
   end
   
   def more
+    require 'rubygems'
+    require 'hpricot'
+    require 'open-uri'
+      review_page = Hpricot(open('http://pitchfork.com/reviews/albums/13872-teen-dream/'))
+      credits = review_page.search("p[@class='credits']").inner_html.to_s
+      regexp = /(?=(January|February|March|April|May|June|July|August|September|October|November|December)).*/
+      @success = credits.match(regexp)
   end
 
 end
