@@ -29,7 +29,6 @@ padding-top:7px;
 }
 
 #current:hover {
-background-color: #c8c9c9;
 border-top:3px #242424 solid;
 }
 
@@ -105,6 +104,15 @@ float:left;
 
 #artist_info p.review {
 background:url(/images/rate.png) no-repeat;
+padding-top:50px;
+padding-right:10px;
+font-size:200%;
+float:right;
+margin-right: 20px;
+}
+
+#artist_info p.date {
+background:url(/images/calendar.png) no-repeat;
 padding-top:50px;
 padding-right:10px;
 font-size:200%;
