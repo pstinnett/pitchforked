@@ -10,6 +10,8 @@ class PagesController < ApplicationController
 
   def next_track
     @track = Track.random()
+    @track.play_count = @track.play_count+1
+    @track.save
   end
 
   def about

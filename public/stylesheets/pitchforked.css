@@ -78,6 +78,7 @@ margin:0;
 color:#dadada;
 padding-top:10px;
 height:100px;
+text-shadow: 1px 1px 1px #aaa;
 }
 
 .highlight {
