@@ -32189,3 +32189,1684 @@ Rendering pages/next_track
   [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
   [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
 Completed in 26ms (View: 14, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:12:53) [GET]
+  [4;36;1mTrack Load (0.6ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 44ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:12:55) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:12:55', "play_count" = 6 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 124ms (View: 113, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:12:57) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:12:59) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:12:59', "play_count" = 7 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:13:33) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:13:34) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:13:34', "play_count" = 4 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.1ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:13:36) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:13:36', "play_count" = 8 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:13:45) [GET]
+  [4;35;1mTrack Load (1.1ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:13:46) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;35;1mTrack Update (0.5ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:13:46', "play_count" = 8 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:14:03) [GET]
+  [4;36;1mTrack Load (0.6ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:14:06) [POST]
+  Parameters: {"authenticity_token"=>"+WqJuzulKha1w4GqZhI4nrDOPV0xgwJiBJke+eyL+DI=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:14:06', "play_count" = 7 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:14:09) [POST]
+  Parameters: {"authenticity_token"=>"+WqJuzulKha1w4GqZhI4nrDOPV0xgwJiBJke+eyL+DI=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:14:09', "play_count" = 4 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:16:00) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 72ms (View: 68, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:16:02) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:16:02', "play_count" = 5 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:16:04) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:16:04', "play_count" = 5 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 85ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:17:22) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:17:23) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:17:23', "play_count" = 5 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 25ms (View: 15, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:17:33) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:17:35) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:17:35', "play_count" = 8 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:17:36) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;36;1mTrack Load (0.4ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:17:36', "play_count" = 9 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.1ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:17:37) [POST]
+  Parameters: {"authenticity_token"=>"uMoV0/G6bVfFa8jX43WNAp6nL8Q/GWJeiRHWGQ1xX2Y=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:17:37', "play_count" = 6 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 57ms (View: 10, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:17:44) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 92ms (View: 87, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:17:45) [POST]
+  Parameters: {"authenticity_token"=>"+WqJuzulKha1w4GqZhI4nrDOPV0xgwJiBJke+eyL+DI=", "_"=>""}
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (12.8ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:17:45', "play_count" = 7 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 129ms (View: 11, DB: 14) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:18:01) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:18:05) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:18:05', "play_count" = 6 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:19:18) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 114ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:19:20) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;36;1mTrack Update (25.6ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:19:20', "play_count" = 9 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 49ms (View: 13, DB: 27) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#prev_track (for 127.0.0.1 at 2010-02-09 22:24:13) [POST]
+  Parameters: {"id"=>"24"}
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+Rendering template within layouts/application
+Rendering pages/prev_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/pages/prev_track/24]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:24:13) [POST]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:24:13', "play_count" = 6 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-09 22:24:14) [GET]
+
+ActionController::RoutingError (No route matches "/null.mp3" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#prev_track (for 127.0.0.1 at 2010-02-09 22:29:00) [POST]
+  Parameters: {"id"=>"27"}
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering pages/prev_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/pages/prev_track/27]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:29:00) [POST]
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;36;1mTrack Update (20.9ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:29:00', "play_count" = 7 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 42ms (View: 10, DB: 22) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-09 22:29:00) [GET]
+
+ActionController::RoutingError (No route matches "/null.mp3" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#prev_track (for 127.0.0.1 at 2010-02-09 22:33:00) [POST]
+  Parameters: {"id"=>"26"}
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+Rendering template within layouts/application
+Rendering pages/prev_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/pages/prev_track/26]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:33:01) [POST]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;35;1mTrack Update (6.8ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:33:01', "play_count" = 10 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 31ms (View: 11, DB: 8) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-09 22:33:01) [GET]
+
+ActionController::RoutingError (No route matches "/null.mp3" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:48:37) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:49:02) [GET]
+  [4;35;1mTrack Load (0.6ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:49:19) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:49:28) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:51:17) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-09 22:51:18) [GET]
+
+ActionController::RoutingError (No route matches "/about" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:51:24) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:51:53) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:52:08) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:56:16) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:57:09) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:57:17) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:57:21) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:57:25) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:57:29) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;35;1mTrack Update (0.5ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:57:29', "play_count" = 8 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:57:33) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:58:08) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 22:58:10) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 03:58:10', "play_count" = 9 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 22:58:13) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:59:06) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:59:41) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 22:59:45) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:00:23) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:00:37) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:00:46) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:01:07) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 62ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:01:16) [GET]
+  [4;35;1mTrack Load (0.7ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:01:26) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:01:38) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:02:02) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:02:28) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:02:40) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;36;1mTrack Update (21.7ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:02:40', "play_count" = 10 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (100.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:02:42) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:02:42', "play_count" = 9 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:03:05) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:03:08) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:03:08', "play_count" = 10 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:03:17) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:03:18) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;35;1mTrack Update (0.5ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:03:18', "play_count" = 6 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:03:20) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:03:20', "play_count" = 7 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (34.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:03:21) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:03:21', "play_count" = 7 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:03:23) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:03:24) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:03:24', "play_count" = 8 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:03:25) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:03:26) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:03:26', "play_count" = 8 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 77ms (View: 67, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:03:56) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:04:31) [GET]
+  [4;35;1mTrack Load (0.6ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:05:00) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:05:10) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:05:33) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:05:41) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:06:01) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:06:15) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 65ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:06:16) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:06:18) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:06:20) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:06:32) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;36;1mTrack Update (3.8ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:06:32', "play_count" = 8 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.1ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (98.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:06:34) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:06:34', "play_count" = 9 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:06:35) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:06:35', "play_count" = 11 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:07:02) [GET]
+  [4;35;1mTrack Load (0.7ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:07:04) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:07:04', "play_count" = 12 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:07:34) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:07:36) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:07:36', "play_count" = 10 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:07:37) [GET]
+  [4;35;1mTrack Load (1.8ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:07:39) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:07:39', "play_count" = 13 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 80ms (View: 69, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:07:45) [GET]
+  [4;36;1mTrack Load (0.6ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:07:47) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:07:47', "play_count" = 11 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:08:02) [GET]
+  [4;35;1mTrack Load (0.8ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:08:04) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:08:04', "play_count" = 12 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:08:09) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:08:10) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:08:10', "play_count" = 9 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 20ms (View: 10, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:08:13) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:08:14) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:08:14', "play_count" = 10 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:08:19) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:08:20) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:08:20', "play_count" = 11 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:09:35) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:09:37) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;35;1mTrack Update (4.8ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:09:37', "play_count" = 9 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 27ms (View: 11, DB: 6) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:09:37) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:09:38) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:09:38', "play_count" = 12 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 78ms (View: 68, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:09:51) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:09:54) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:09:54', "play_count" = 11 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (100.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:09:55) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.4ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:09:55', "play_count" = 11 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:09:56) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:09:57) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:09:57', "play_count" = 13 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:10:16) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:10:25) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:10:25', "play_count" = 12 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.1ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:10:26) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:10:26', "play_count" = 12 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:10:28) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:10:29) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:10:29', "play_count" = 10 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:10:29) [GET]
+  [4;35;1mTrack Load (0.6ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 80ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:10:30) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:10:30', "play_count" = 13 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.1ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:10:31) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:10:31', "play_count" = 14 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 87ms (View: 13, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:11:00) [GET]
+  [4;36;1mTrack Load (1.3ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:11:01) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 25) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/610/320/60678.mp3' AND "tracks".id <> 25) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:11:01', "play_count" = 14 WHERE "id" = 25[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:11:12) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:11:23) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:11:26) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:11:30) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:11:35) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 62ms (View: 61, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:11:41) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:11:41', "play_count" = 13 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:11:54) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:11:56) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;35;1mTrack Update (0.5ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:11:56', "play_count" = 14 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:12:08) [GET]
+  [4;36;1mTrack Load (0.6ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:12:09) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:12:11) [POST]
+  Parameters: {"authenticity_token"=>"aV0mbzlKxJm2fmHQWPEj/kRNUhc4Vaqfc8X60VQOyWs=", "_"=>""}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;35;1mTrack Update (0.3ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:12:11', "play_count" = 15 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:12:14) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:12:25) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:12:28) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:12:49) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:12:50) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:12:50', "play_count" = 14 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.1ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:12:51) [POST]
+  Parameters: {"authenticity_token"=>"5i1OcI7A6IZrfm9trHv2LRLr2W3AqUoazG0Rr0n5EsE="}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:12:51', "play_count" = 11 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.3ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 90ms (View: 79, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:13:50) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:13:51) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:13:53) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;36;1mTrack Update (8.0ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:13:53', "play_count" = 15 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 33ms (View: 13, DB: 9) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:13:56) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:14:00) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 82ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:14:02) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:14:02', "play_count" = 10 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:14:03) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT id FROM tracks[0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT * FROM "tracks" WHERE ("tracks"."id" = 24) [0m
+  [4;36;1mTrack Load (0.1ms)[0m   [0;1mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/617/307/87197.mp3' AND "tracks".id <> 24) LIMIT 1[0m
+  [4;35;1mTrack Update (0.2ms)[0m   [0mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:14:03', "play_count" = 16 WHERE "id" = 24[0m
+Rendering pages/next_track
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 106ms (View: 95, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:15:52) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:15:55) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 14) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/584/969/16997.mp3' AND "tracks".id <> 14) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:15:55', "play_count" = 15 WHERE "id" = 14[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (105.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:15:56) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 26) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/608/822/28066.mp3' AND "tracks".id <> 26) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:15:56', "play_count" = 13 WHERE "id" = 26[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:15:59) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:15:59) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.2ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 13) [0m
+  [4;35;1mTrack Load (0.2ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/581/394/23059.mp3' AND "tracks".id <> 13) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:15:59', "play_count" = 11 WHERE "id" = 13[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 268) [0m
+  [4;36;1mArtist Load (0.1ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #5 of app/views/pages/next_track.html.erb:
+2: <div id="current" class="track_container" onclick="togglePlay()" onMouseOver="hoverOn()" onMouseOut="hoverOff()">
+3: <div id="artwork"><img src="<%= @track.album.artwork_url %>" /></div>
+4: <div id="artist_info" onMouseOver="hoverOn()">
+5: 	<p class="track" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.name %></span> by <%= @track.artist.name %></a></p>
+6: 	<% if @track.album.id != 0 %>
+7: 		<p class="date" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_date %></span></p>
+8: 		<p class="review" onMouseOver="hoverOn()"><a href="<%= @track.album.pf_url %>" target="_blank"><span class="highlight"><%= @track.album.pf_score %></span> Rating</a></p>
+
+    app/views/pages/next_track.html.erb:5
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:16:01) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 23) [0m
+  [4;35;1mTrack Load (0.1ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/618/825/25464.mp3' AND "tracks".id <> 23) LIMIT 1[0m
+  [4;36;1mTrack Update (0.2ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:16:01', "play_count" = 16 WHERE "id" = 23[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 266) [0m
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 27ms (View: 15, DB: 2) | 200 OK [http://localhost/pages/next_track]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:16:21) [GET]
+  [4;35;1mTrack Load (1.1ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-02-09 23:16:29) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-09 23:17:23) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#next_track (for 127.0.0.1 at 2010-02-09 23:18:00) [POST]
+  Parameters: {"authenticity_token"=>"TKL9RSrLjEUMyQvrsv92wY5nVIgFzP5QxzQ/+cXUov8=", "_"=>""}
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT id FROM tracks[0m
+  [4;36;1mTrack Load (0.3ms)[0m   [0;1mSELECT * FROM "tracks" WHERE ("tracks"."id" = 27) [0m
+  [4;35;1mTrack Load (0.3ms)[0m   [0mSELECT "tracks".id FROM "tracks" WHERE ("tracks"."mp3_url" = 'http://8tracks.s3.amazonaws.com/tf/000/605/774/92936.mp3' AND "tracks".id <> 27) LIMIT 1[0m
+  [4;36;1mTrack Update (0.3ms)[0m   [0;1mUPDATE "tracks" SET "updated_at" = '2010-02-10 04:18:00', "play_count" = 12 WHERE "id" = 27[0m
+Rendering pages/next_track
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 0) [0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 266) [0m
+Completed in 27ms (View: 12, DB: 2) | 200 OK [http://localhost/pages/next_track]

@@ -43,6 +43,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id', :action => 'index', :controller => 'pages'
   map.connect ':controller/:action/:id.:format'
   map.scrape '/scrape', :controller => 'artists', :action => 'load'
-  map.scrape '/test', :controller => 'artists', :action => 'more'
+  map.scrape '/about', :controller => 'pages', :action => 'about'
   map.import_tracks '/import/:id', :controller => 'tracks', :action => 'import'
 end

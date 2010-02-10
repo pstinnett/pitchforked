@@ -36,9 +36,9 @@ border-top:3px #242424 solid;
 height:100px;
 width:100px;
 float:left;
-margin:0 20px 0 10px;
 -moz-border-radius:4px;
 -webkit-border-radius:4px;
+margin:0 20px 0 10px;
 }
 
 #artwork img {
@@ -64,9 +64,35 @@ margin:12px 0 0 10px;
 
 p.intro {
 font-size:25px;
+line-height:40px;
 width:800px;
 padding-top:100px;
 margin:auto;
+}
+
+p.normal {
+font-size:25px;
+line-height:40px;
+width:800px;
+padding-top:20px;
+margin:auto;
+}
+
+p.about {
+float:right;
+position:relative;
+font-size:20px;
+margin:15px 15px 0 0;
+}
+
+p.about a {
+background:none;
+color:#fff;
+text-decoration:none;
+}
+
+p.about a:hover {
+text-decoration:underline;
 }
 
 h2 {
@@ -78,7 +104,7 @@ margin:0;
 color:#dadada;
 padding-top:10px;
 height:100px;
-text-shadow: 1px 1px 1px #aaa;
+text-shadow:1px 1px 1px #aaa;
 }
 
 .highlight {
@@ -109,7 +135,7 @@ padding-top:50px;
 padding-right:10px;
 font-size:200%;
 float:right;
-margin-right: 20px;
+margin-right:20px;
 }
 
 #artist_info p.date {
@@ -146,7 +172,7 @@ clear:both;
 height:50px;
 background-color:#f2f2f2;
 border-top:1px #dadada solid;
-padding-top: 8px;
+padding-top:8px;
 }
 
 .prev_track_container #artwork {
@@ -154,7 +180,7 @@ height:50px;
 width:50px;
 float:left;
 background:#ddd;
-margin:0px 20px 0 10px;
+margin:0 20px 0 10px;
 }
 
 .prev_track_container #artwork img {
@@ -180,15 +206,7 @@ font-size:150%;
 float:left;
 }
 
-.prev_track_container #artist_info p.review {
-background-image:none;
-padding-right:10px;
-padding-top:2px;
-font-size:150%;
-float:right;
-}
-
-.prev_track_container #artist_info p.date {
+.prev_track_container #artist_info p.review,.prev_track_container #artist_info p.date {
 background-image:none;
 padding-right:10px;
 padding-top:2px;
