@@ -34121,3 +34121,446 @@ Processing PagesController#index (for 127.0.0.1 at 2010-02-14 17:18:58) [GET]
 Rendering template within layouts/application
 Rendering pages/index
 Completed in 72ms (View: 67, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-14 17:22:41) [GET]
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-14 17:22:41) [GET]
+  [4;36;1mTrack Load (0.5ms)[0m   [0;1mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:22:52) [GET]
+
+NoMethodError (undefined method `authorize' for #<TracksController:0x103354d38>):
+  
+
+Rendered rescues/_trace (90.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:24:21) [GET]
+Rendering template within layouts/application
+Rendering tracks/import
+Completed in 29ms (View: 28, DB: 0) | 200 OK [http://localhost/import]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:24:27) [GET]
+  Parameters: {"id"=>"20"}
+Rendering template within layouts/application
+Rendering tracks/import
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/import/20]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:24:34) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering tracks/import
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/import/1]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-14 17:24:50) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:24:53) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering tracks/import
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/import/1]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:24:57) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-14 17:25:02) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"c3u6dVCUmll6i2nbczBvX9Jex5GNR8mBnZUyZ6rvQ6k=", "login"=>"pstinnett", "password"=>"hotcoffee86"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'pstinnett' and activated_at IS NOT NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-14 17:25:02) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:25:07) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering tracks/import
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/import/1]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:25:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE (id = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `url_name' for nil:NilClass):
+  app/controllers/tracks_controller.rb:25:in `import'
+
+Rendered rescues/_trace (93.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-14 17:27:16) [GET]
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-14 17:27:16) [GET]
+  [4;35;1mTrack Load (0.5ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:27:20) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `login_required' for #<TracksController:0x1031c9dd8>):
+  
+
+Rendered rescues/_trace (102.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:27:42) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/import/1]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:27:42) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-14 17:27:47) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4yxWW1JHbFYZwF6Tpk2F3bAE4+y/N8cVb7cnCi3goGY=", "login"=>"pstinnett", "password"=>"hotcoffee86"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'pstinnett' and activated_at IS NOT NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/import/1
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:27:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE (id = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `url_name' for nil:NilClass):
+  app/controllers/tracks_controller.rb:25:in `import'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:27:52) [GET]
+  Parameters: {"id"=>"120"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArtist Load (0.2ms)[0m   [0;1mSELECT * FROM "artists" WHERE (id = 120) LIMIT 1[0m
+
+NoMethodError (undefined method `url_name' for nil:NilClass):
+  app/controllers/tracks_controller.rb:25:in `import'
+
+Rendered rescues/_trace (100.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-02-14 17:27:57) [GET]
+Redirected to http://localhost:3000/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-02-14 17:27:57) [GET]
+  [4;35;1mTrack Load (0.7ms)[0m   [0mSELECT * FROM "tracks" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing TracksController#import (for 127.0.0.1 at 2010-02-14 17:28:01) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/import/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:28:01) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ArtistsController#load (for 127.0.0.1 at 2010-02-14 17:28:31) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/scrape]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:28:31) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-02-14 17:28:35) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"zlLYUbDHuj6Xhx4KWz1R6rfr/jibSADbifkkp0ftDBE=", "login"=>"pstinnett", "password"=>"hotcoffee86"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'pstinnett' and activated_at IS NOT NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/scrape
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing ArtistsController#load (for 127.0.0.1 at 2010-02-14 17:28:35) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'No Album Found') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Gil Scott-Heron') LIMIT 1[0m
+  [4;36;1mArtist Create (0.3ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at", "is_enabled", "url_name") VALUES('Gil Scott-Heron', '2010-02-14 22:28:36', '2010-02-14 22:28:36', 't', 'gil+scott-heron')[0m
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'I&#39;m New Here') LIMIT 1[0m
+  [4;36;1mAlbum Create (0.3ms)[0m   [0;1mINSERT INTO "albums" ("name", "pf_score", "created_at", "pf_date", "updated_at", "is_enabled", "year", "pf_url", "artwork_url", "record_label", "artist_id") VALUES('I&#39;m New Here', 8.5, '2010-02-14 22:28:37', 'February 10, 2010', '2010-02-14 22:28:37', 't', 2010, 'http://www.pitchfork.com/reviews/albums/13893-im-new-here/', 'http://cdn.pitchfork.com/media/imnewhere.jpg', 'XL', 353)[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Hot Chip') LIMIT 1[0m
+  [4;36;1mArtist Create (0.2ms)[0m   [0;1mINSERT INTO "artists" ("name", "created_at", "updated_at", "is_enabled", "url_name") VALUES('Hot Chip', '2010-02-14 22:28:37', '2010-02-14 22:28:37', 't', 'hot+chip')[0m
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'One Life Stand') LIMIT 1[0m
+  [4;36;1mAlbum Create (0.3ms)[0m   [0;1mINSERT INTO "albums" ("name", "pf_score", "created_at", "pf_date", "updated_at", "is_enabled", "year", "pf_url", "artwork_url", "record_label", "artist_id") VALUES('One Life Stand', 8.4, '2010-02-14 22:28:37', 'February 8, 2010', '2010-02-14 22:28:37', 't', 2010, 'http://www.pitchfork.com/reviews/albums/13908-one-life-stand/', 'http://cdn.pitchfork.com/media/onelifestand200.jpg', 'Astralwerks', 354)[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Charlotte Gainsbourg') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'IRM') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Beach House') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Teen Dream') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Four Tet') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'There Is Love in You') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Surfer Blood') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Astro Coast') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Owen Pallett') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Heartland') LIMIT 1[0m
+  [4;35;1mArtist Load (0.8ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Vampire Weekend') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Contra') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Animal Collective') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Fall Be Kind EP') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Real Estate') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Real Estate') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Bear in Heaven') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Beast Rest Forth Mouth') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = '') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = '5: Five Years of Hyperdub') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Fuck Buttons') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Tarot Sport') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Atlas Sound') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Logos') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Mountain Goats') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Life of the World to Come') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Neon Indian') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Psychic Chasms') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Flaming Lips') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Embryonic') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Very Best') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Warm Heart of Africa') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Memory Tapes') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Seek Magic') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Girls') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Album') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Volcano Choir') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Unmap') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Raekwon') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Only Built 4 Cuban Linx... Pt. II') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Wild Beasts') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Two Dancers') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The xx') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The xx') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'YACHT') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'See Mystery Lights') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Antlers') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Hospice') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Delorean') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Ayrton Senna EP') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'jj') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'jj n° 2') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Cass McCombs') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Catacombs') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Bibio') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Ambivalence Avenue') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Sunset Rubdown') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Dragonslayer') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Dinosaur Jr.') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Farm') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Mos Def') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Ecstatic') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Dirty Projectors') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Bitte Orca') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Sunn O)))') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Monoliths &amp; Dimensions') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Phoenix') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Wolfgang Amadeus Phoenix') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Grizzly Bear') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Veckatimest') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Isis') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Wavering Radiant') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'St. Vincent') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Actor') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Japandroids') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.9ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Post-Nothing') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Woods') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Songs of Shame') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Camera Obscura') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'My Maudlin Career') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Bill Callahan') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Sometimes I Wish We Were an Eagle') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Bat For Lashes') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Two Suns') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Fever Ray') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Fever Ray') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Dan Deacon') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Bromst') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Cymbals Eat Guitars') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Why There Are Mountains') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Wavves') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Wavvves') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = '') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Dark Was the Night') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Pains of Being Pure at Heart') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Pains of Being Pure at Heart') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Antony and the Johnsons') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Crying Light') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Animal Collective') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Merriweather Post Pavilion') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Very Best') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Esau Mwamwaya and Radioclit are the Very Best') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Deerhunter') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Microcastle/Weird Era Cont.') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'DJ /rupture') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Uproot') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Fucked Up') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Chemistry of Common Life') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Mount Eerie With Julie Doiron and Fred Squire') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Lost Wisdom') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Marnie Stern') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'This Is It and I Am It and You Are It and So Is That and He Is It and She Is It and It Is It and That Is That') LIMIT 1[0m
+  [4;35;1mArtist Load (0.9ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Department of Eagles') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'In Ear Park') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Vivian Girls') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Vivian Girls') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'TV on the Radio') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Dear Science') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Flying Lotus') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Los Angeles') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Lindstrøm') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Where You Go I Go Too') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Walkmen') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'You &amp; Me') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Bug') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'London Zoo') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Harvey Milk') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Life...The Best Game in Town') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Air France') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'No Way Down EP') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Lil Wayne') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Tha Carter III') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Crystal Antlers') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'EP') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Fleet Foxes') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Fleet Foxes') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Spiritualized') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Songs in A&amp;E') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Bonnie "Prince" Billy') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Lie Down in the Light') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'No Age') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Nouns') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Portishead') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Third') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Titus Andronicus') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Airing of Grievances') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'M83') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Saturdays=Youth') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Cut Copy') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'In Ghost Colours') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Dodos') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Visiter') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Fuck Buttons') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Street Horrrsing') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Hercules and Love Affair') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Hercules and Love Affair') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Ruby Suns') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Sea Lion') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Fleet Foxes') LIMIT 1[0m
+  [4;36;1mAlbum Load (1.1ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Sun Giant EP') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Beach House') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Devotion') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'El Guincho') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Alegranza!') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Atlas Sound') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Let the Blind Lead Those Who Can See But Cannot Feel') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'High Places') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = '03/07 - 09/07') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Vampire Weekend') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Vampire Weekend') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Times New Viking') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Rip It Off') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Daft Punk') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Alive 2007') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Burial') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Untrue') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Jay-Z') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'American Gangster') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Grizzly Bear') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Friend EP') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'The Tough Alliance') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'A New Chance') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Radiohead') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'In Rainbows') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Chromatics') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Night Drive') LIMIT 1[0m
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Black Kids') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Wizard of Ahhhs EP') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Sunset Rubdown') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Random Spirit Lover') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Iron & Wine') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'The Shepherd&#39;s Dog') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Les Savy Fav') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Let&#39;s Stay Friends') LIMIT 1[0m
+  [4;35;1mArtist Load (0.2ms)[0m   [0mSELECT "artists".id FROM "artists" WHERE ("artists"."name" = 'Kanye West') LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."name" = 'Graduation') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering artists/load
+Completed in 126731ms (View: 23, DB: 48) | 200 OK [http://localhost/scrape]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:32:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:32:52) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 76ms (View: 7, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:32:55) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-02-14 17:32:59) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/session/new]

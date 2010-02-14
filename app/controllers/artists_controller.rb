@@ -1,4 +1,5 @@
 class ArtistsController < ApplicationController
+  before_filter :login_required 
   def new
     @artist = Artist.new
   end
