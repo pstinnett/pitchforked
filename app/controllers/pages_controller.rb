@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_filter :login_required, :only => [ :manage ]
   layout "application", :except => [:next_track]
   def index
     @track = Track.find(:first)
@@ -12,6 +13,9 @@ class PagesController < ApplicationController
     @track = Track.random()
     @track.play_count = @track.play_count+1
     @track.save
+  end
+  
+  def manage
   end
 
   def about

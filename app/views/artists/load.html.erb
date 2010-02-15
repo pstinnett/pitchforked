@@ -1,2 +1,15 @@
-<%= @artists %>
 <%= @page_num %>
+
+<table>
+  <tr>
+    <th>Artist</th>
+	<th>URL</th>
+  </tr>
+  <% for artist in @artists %>
+    <tr>
+    	<td><%=h artist.name %></td>
+		<td><%= artist.url_name %></td>
+    </tr>
+    </tr>
+  <% end %>
+</table>

@@ -67,7 +67,7 @@ class ArtistsController < ApplicationController
             @new_album.record_label = record_label.to_s
             @new_album.year = year.join.to_s.gsub(/[^0-9]/, '').to_i
           @new_album.save
-          @artists << artist_name
+          @artists << @new_artist
         end
       end
     end

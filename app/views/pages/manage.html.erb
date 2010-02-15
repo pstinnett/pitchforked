@@ -1,0 +1,26 @@
+<div id="wrapper">
+	<div id="header">
+		<div id="title">
+			<h1 style="float:left;">Pitchforked</h1>
+			<p class="about"><%= link_to "Login", :login unless logged_in? %><%= link_to "Logout", :logout unless !logged_in? %></p>
+		</div>
+	</div>
+		<div id="mytrack">
+			<p class="intro">Welcome to the admin area.</p>
+			<p class="normal"><strong>Actions</strong></p>
+			<p class="normal">
+			<%= 
+				link_to_remote "Scrape",
+					:url => { :controller => "artists", :action => "load" },
+					:update => { :success => "scrape_results", :failure => "error" },
+					:html => { :class => "play_link" },
+					:before => "Element.show('scrape_loading')",
+					:success => "Element.hide('scrape_loading')"
+			%> for new artists.
+			</p>
+			<p class="normal" id="scrape_results"></p>
+			<p class="normal"id="scrape_loading" style="display:none"><img src="/images/ajax-loader.gif" /> Scraping for new artists  </p>
+			
+		</div>
+		<div id="prev_track"></div>
+</div>

@@ -1,16 +1,26 @@
-<h1>Log Ina</h1>
+<div id="wrapper">
+	<div id="header">
+		<div id="title">
+			<h1 style="float:left;">Pitchforked</h1>
+			<p class="about"><%= link_to "Logout", :logout unless !logged_in? %></p>
+		</div>
+	</div>
+	<div id="admin_wrapper">
+		<div id="login_form">
+			<% form_tag session_path do -%>
+			<p><%= label_tag 'User' %>
+			<%= text_field_tag 'login', @login %></p>
 
-<% form_tag session_path do -%>
-<p><%= label_tag 'User' %><br />
-<%= text_field_tag 'login', @login %></p>
+			<p><%= label_tag 'password' %>
+			<%= password_field_tag 'password', nil %></p>
 
-<p><%= label_tag 'password' %><br/>
-<%= password_field_tag 'password', nil %></p>
+			<!-- Uncomment this if you want this functionality
+			<p><%= label_tag 'remember_me', 'Remember me' %>
+			<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+			-->
 
-<!-- Uncomment this if you want this functionality
-<p><%= label_tag 'remember_me', 'Remember me' %>
-<%= check_box_tag 'remember_me', '1', @remember_me %></p>
--->
-
-<p><%= submit_tag 'Log in' %></p>
-<% end -%>
+			<p><%= submit_tag 'Log in' %></p>
+			<% end -%>
+		</div>
+	</div>
+</div>

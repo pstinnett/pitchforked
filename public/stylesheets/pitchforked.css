@@ -130,7 +130,7 @@ float:left;
 }
 
 #artist_info p.review {
-background:url(/images/rate.png) no-repeat;
+background: url(/images/rate.png) no-repeat;
 padding-top:50px;
 padding-right:10px;
 font-size:200%;
@@ -139,7 +139,7 @@ margin-right:20px;
 }
 
 #artist_info p.date {
-background:url(/images/calendar.png) no-repeat;
+background: url(/images/calendar.png) no-repeat;
 padding-top:50px;
 padding-right:10px;
 font-size:200%;
@@ -212,4 +212,34 @@ padding-right:10px;
 padding-top:2px;
 font-size:150%;
 float:right;
+}
+
+/* admin styles */
+#admin_wrapper {
+padding-top:100px;
+}
+
+#login_form {
+width: 450px;
+height: 500px;
+margin: auto auto;
+padding-top: 200px;
+background: url(/images/lock.png) no-repeat center top;
+text-align:right;
+}
+
+#login_form p {
+font-size: 20px;
+margin-top: 20px;
+}
+
+#login_form input {
+font-size:20px;
+margin-right: 25px;
+margin-left:20px;
+text-align:left;
+}
+
+#scrape_results {
+font-size:12px;
 }
