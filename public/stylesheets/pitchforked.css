@@ -247,45 +247,31 @@ font-size:12px;
 #sm2-container.swf-default,
 #sm2-container.swf-timedout,
 #sm2-container.swf-loaded {
- /*
-
-  Default style for SM2 container, effectively "hidden" out of view (on-screen via position:fixed for efficiency)
-  Apply this class name when SM2 has started, so the movie can be repositioned to its normal "hidden" place
-
- */
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  width:0px;
-  height:0px;
-  margin:2px;
-
-  /* IE 6 hax, since no position:fixed */
-  _position:absolute;
-  _left:-9999px;
-  _top:-9999px;
+position:fixed;
+bottom:0px;
+left:0px;
+width:0px;
+height:0px;
+margin:2px;
+/* IE 6 hax, since no position:fixed */
+_position:absolute;
+_left:-9999px;
+_top:-9999px;
 }
 
 #sm2-container.swf-default,
 #sm2-container.swf-timedout,
 #sm2-container.swf-loaded {
- /*
-
-  Default style for SM2 container, effectively "hidden" out of view (on-screen via position:fixed for efficiency)
-  Apply this class name when SM2 has started, so the movie can be repositioned to its normal "hidden" place
-
- */
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  width:0px;
-  height:0px;
-  margin:2px;
-
-  /* IE 6 hax, since no position:fixed */
-  _position:absolute;
-  _left:-9999px;
-  _top:-9999px;
+position:fixed;
+bottom:0px;
+left:0px;
+width:0px;
+height:0px;
+margin:2px;
+/* IE 6 hax, since no position:fixed */
+_position:absolute;
+_left:-9999px;
+_top:-9999px;
 }
 
 #sm2-container.swf-default,
@@ -297,7 +283,8 @@ border-top:solid 2px #fff975;
 float:left;
 clear:both;
 width:100%;
-_position:absolute; /* IE 6 hax */
+/* IE 6 hax, since no position:fixed */
+_position:absolute;
 _left:0px;
 _top:0px;
 }
